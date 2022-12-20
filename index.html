@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Quiz</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__container">
+			<div class="header__menu">
+				<div class="header__menu-burger">
+					<span></span>
+				</div>
+				<div class="header__menu-text">
+					Подготовка к отопительному сезону. Климатическая техника
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="quiz__container">
+
+
+		<h1 class="quiz__title">
+			Тестирование
+		</h1>
+
+
+		<div class="quiz__description">
+			<p class="quiz__description-text">
+				Осталось пройти небольшой тест, который покажет, как хорошо ты усвоил материал
+			</p>
+			<ol class="quiz__description__list">
+				<li class="quiz__description__list-item">
+					Для успешного прохождения нужно правильно ответить минимум на 7 вопросов из 10
+				</li>
+				<li class="quiz__description__list-item">
+					На прохождение теста дается 3 попытки
+				</li>
+			</ol>
+		</div>
+
+
+		<div class="quiz" id="quiz">
+
+			<div class="quiz__header" id="header">
+
+				<h2 class="quiz__header-title">%title%</h2>
+
+				<!-- Результаты викторины 
+                <h2 class="title">%title%</h2>
+                <h3 class="summary">%message%</h3>
+                <p class="result">%result%</p>
+                -->
+
+			</div>
+
+			<ul class="quiz__list" id="list">
+
+				<li class="quiz__list-item">
+					<label>
+						<input type="radio" class="quiz__input-answer" name="answer" />
+						<span>Ответ 1</span>
+					</label>
+				</li>
+
+				<li class="quiz__list-item">
+					<label>
+						<input type="radio" class="quiz__input-answer" name="answer" />
+						<span>Ответ 1</span>
+					</label>
+				</li>
+
+				<li class="quiz__list-item">
+					<label>
+						<input type="radio" class="quiz__input-answer" name="answer" />
+						<span>Ответ 1</span>
+					</label>
+				</li>
+
+				<li class="quiz__list-item">
+					<label>
+						<input type="radio" class="quiz__input-answer" name="answer" />
+						<span>Ответ 1</span>
+					</label>
+				</li>
+
+			</ul>
+
+			<div class="quiz__warning">
+				<p>Вы не ответили на вопрос</p>
+				<p>Пожалуйста, выберите, ответ на данный вопрос</p>
+			</div>
+
+
+
+
+
+		</div>
+
+		<div class="quiz__processing">
+			<div class="quiz__processing-name">Константин Константинопольский</div>
+			<div class="quiz__processing-data">20.01.2020</div>
+			<div class="quiz__rezult">
+				<div class="quiz__rezult-attempt">
+					<div class="quiz__attempt-title">
+						Результаты 1-й попытки
+					</div>
+					<div class="quiz__attempt-value">
+						<span>6/10</span>
+						<span>60%</span>
+					</div>
+				</div>
+				<div class="quiz__rezult-attempt maximum">
+					<div class="quiz__attempt-title">
+						Лучшая попытка
+					</div>
+					<div class="quiz__attempt-value">
+						<span>60%</span>
+					</div>
+				</div>
+			</div>
+			<div class="quiz__processing-comment">
+				<p>Не очень хороший результат, рекомендуем изучить курс еще раз.</p>
+			</div>
+		</div>
+
+		<div class="quiz__control">
+			<button class="quiz__control-btn" type="submit" id="submit">Принять</button>
+			<button class="quiz__control-btn start" type="button">Начать<img src="images/1.svg" alt="img"></button>
+			<button class="quiz__processing-btn" type="submit" id="submit">Повторить тест<img src="images/Union.svg"
+					alt="img"></button>
+		</div>
+
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
